@@ -86,7 +86,8 @@ export default {
   methods: {
     async submitContactForm() {
       try {
-        const response = await axios.post("/action.php", this.formData);
+        const baseURL = process.env.VUE_APP_BASE_URL; // Access the base URL from the environment file
+        const response = await axios.post(`${baseURL}/action.php`, this.formData);
         
         if (response.data.success) {
           this.successMessage = "Your message has been sent successfully!";
