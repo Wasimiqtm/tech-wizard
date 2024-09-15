@@ -86,10 +86,19 @@ export default {
   methods: {
     async submitContactForm() {
       try {
-        // const baseURL = process.env.VUE_APP_BASE_URL; // Access the base URL from the environment file
-        // const response = await axios.post(`${baseURL}/action.php`, this.formData);
-        const response = await axios.post("/action.php", this.formData);
-        
+        const formData = new FormData();
+        formData.append('name', this.formData.name);
+        formData.append('email', this.formData.email);
+        formData.append('phone', this.formData.phone);
+        formData.append('subject', this.formData.subject);
+        formData.append('message', this.formData.message);
+
+        const response = await axios.post("/action.php", formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data', // Make sure this header is set
+          },
+        });
+
         if (response.data.success) {
           this.successMessage = "Your message has been sent successfully!";
         } else {
@@ -99,7 +108,7 @@ export default {
         console.error("Error sending message:", error);
         this.successMessage = "An error occurred. Please try again.";
       }
-    },
+    }
   },
   mounted() {
     new WOW().init();
