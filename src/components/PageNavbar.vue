@@ -20,7 +20,7 @@
 
         <div class="hidden md:block">
           <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
-            <li v-for="value in pagesLinks" :key="value.title">
+            <li v-for="value in translatedPagesLinks" :key="value.title">
               <router-link :to="value.link" :class="{ 'border-b-4 border-navbgcolor': $route.path === value.link }"
                 class="block pt-2 mb-2 font-bevietnam font-semibold text-black text-lg">
                 {{ value.title }}
@@ -34,7 +34,7 @@
           <router-link to="/contact">
             <button type="button"
               class="px-3 py-2 text-md font-medium text-center text-white bg-navbgcolor rounded-lg hover:bg-black">
-              Get a Quote
+             {{ $t('get_a_quote') }}
             </button>
           </router-link>
 
@@ -101,6 +101,13 @@ export default {
   computed: {
     currentLanguageLabel() {
       return this.languages[this.currentLanguage];
+    },
+    translatedPagesLinks() {
+      return [
+        { title: this.$t("home"), link: "/" },
+        { title: this.$t("services"), link: "/services" },
+        { title: this.$t("contact_us"), link: "/contact" }
+      ];
     }
   },
   methods: {

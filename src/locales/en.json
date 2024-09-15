@@ -75,7 +75,46 @@
     
     "call_to_action": "Call to Action",
     "call_to_action_des": "For a fast and affordable tech solution, just give us your project details, and we'll provide you with a clear and budget-friendly quote for a stress-free tech experience. Count on Tech Wizard for all your tech needs.",
-    "contact_us_btn": "Contact Us"
+    "contact_us_btn": "Contact Us",
+    
+
+
+    "home": "Home",
+    "services": "Services",
+    "contact_us": "Contact Us",
+    "get_a_quote": "Get a Quote",
+
+    "footer": {
+    "description": "Tech Wizard - Building and Securing the Future of Technology.",
+    "our_links": "Our Links",
+    "home": "Home",
+    "services": "Services",
+    "contact_us": "Contact Us",
+    "get_in_touch": "Get In Touch",
+    "phone": "+1 (463) 289-7828",
+    "email": "contact@teckywizard.com",
+    "address": "P.O. Box 464 Greenfield, IN 46140",
+    "copyright": "Copyright © 2024 All rights reserved"
+  },
+
+  "contact": {
+    "full_name": "Full Name",
+    "enter_full_name": "Enter Your Full Name",
+    "email": "Email",
+    "enter_email": "Enter Your Email",
+    "phone_number": "Phone Number",
+    "enter_phone_number": "Enter Your Phone Number",
+    "subject": "Subject",
+    "message": "Message",
+    "type_message": "Type Message Here",
+    "send_message": "Send Message",
+    "our_contact": "Our Contact",
+    "phone": "+1 (463) 289-7828",
+    "mail_us": "Mail Us",
+    "email_address": "contact@teckywizard.com",
+    "our_location": "Our Location",
+    "address": "P.O. Box 464 Greenfield, IN 46140"
+  }
 
 
 

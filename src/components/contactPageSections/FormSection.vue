@@ -6,31 +6,31 @@
         <form @submit.prevent="submitContactForm">
           <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
             <div>
-              <label class="font-bevietnam text-headingclr font-light text-lg">Full Name*</label><br />
-              <input v-model="formData.name" type="text" placeholder="Enter Your Full Name" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
+              <label class="font-bevietnam text-headingclr font-light text-lg">{{ $t("contact.full_name") }}*</label><br />
+              <input v-model="formData.name" type="text" :placeholder="$t('contact.enter_full_name')" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
             </div>
             <div>
-              <label class="font-bevietnam text-headingclr font-light text-lg">Email*</label><br />
-              <input v-model="formData.email" type="email" placeholder="Enter Your Email" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
+              <label class="font-bevietnam text-headingclr font-light text-lg">{{ $t("contact.email") }}*</label><br />
+              <input v-model="formData.email" type="email" :placeholder="$t('contact.enter_email')" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
             </div>
           </div>
 
           <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
             <div>
-              <label class="font-bevietnam text-headingclr font-light text-lg">Phone Number*</label><br />
-              <input v-model="formData.phone" type="number" placeholder="Enter Your Phone Number" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
+              <label class="font-bevietnam text-headingclr font-light text-lg">{{ $t("contact.phone_number") }}*</label><br />
+              <input v-model="formData.phone" type="number" :placeholder="$t('contact.enter_phone_number')" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
             </div>
             <div>
-              <label class="font-bevietnam text-headingclr font-light text-lg">Subject*</label><br />
-              <input v-model="formData.subject" type="text" placeholder="Subject" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
+              <label class="font-bevietnam text-headingclr font-light text-lg">{{ $t("contact.subject") }}*</label><br />
+              <input v-model="formData.subject" type="text" :placeholder="$t('contact.subject')" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
             </div>
           </div>
 
-          <label class="font-bevietnam text-headingclr font-light text-lg">Message*</label><br />
-          <textarea v-model="formData.message" placeholder="Type Message Here" class="bg-themebgcolor px-4 py-3 mt-2 w-full h-40" required></textarea>
+          <label class="font-bevietnam text-headingclr font-light text-lg">{{ $t("contact.message") }}*</label><br />
+          <textarea v-model="formData.message" :placeholder="$t('contact.type_message')" class="bg-themebgcolor px-4 py-3 mt-2 w-full h-40" required></textarea>
 
           <button class="bg-navbgcolor font-bevietnam rounded px-4 py-2 text-white mt-4 font-bold text-sm hover:bg-black">
-            Send Message
+            {{ $t("contact.send_message") }}
           </button>
           <p v-if="successMessage" class="mt-4 text-green-500">{{ successMessage }}</p>
         </form>
@@ -41,23 +41,23 @@
         <div class="py-6">
           <img src="music.png" alt="user" class="mx-auto" />
           <h3 class="font-bevietnam text-center text-headingclr font-bold text-2xl mt-2">
-            Our Contact
+            {{ $t("contact.our_contact") }}
           </h3>
-          <p class="font-bevietnam text-center text-[#333] font-light text-lg mt-2">+1 (463) 289-7828</p>
+          <p class="font-bevietnam text-center text-[#333] font-light text-lg mt-2">{{ $t("contact.phone") }}</p>
         </div>
         <div class="py-6">
           <img src="Group 9156.png" alt="user" class="mx-auto" />
           <h3 class="font-bevietnam text-center text-headingclr font-bold text-2xl mt-2">
-            Mail Us
+            {{ $t("contact.mail_us") }}
           </h3>
-          <p class="font-bevietnam text-center text-[#333] font-light text-lg mt-2">contact@teckywizard.com</p>
+          <p class="font-bevietnam text-center text-[#333] font-light text-lg mt-2">{{ $t("contact.email_address") }}</p>
         </div>
         <div class="py-6">
           <img src="Group 9023.png" alt="user" class="mx-auto" />
           <h3 class="font-bevietnam text-center text-headingclr font-bold text-2xl mt-2">
-            Our Location
+            {{ $t("contact.our_location") }}
           </h3>
-          <p class="font-bevietnam text-center text-[#333] font-light text-lg mt-2">1682 Copeland Farms Dr, Greenfield IN 46140</p>
+          <p class="font-bevietnam text-center text-[#333] font-light text-lg mt-2">{{ $t("contact.address") }}</p>
         </div>
       </div>
     </div>

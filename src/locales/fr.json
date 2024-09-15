@@ -4,7 +4,7 @@
     "contact_text": "Prêt à élever vos solutions technologiques ? Contactez Tech Wizard dès aujourd'hui pour en savoir plus sur la manière dont nous pouvons aider votre organisation à créer et sécuriser ses logiciels, en garantissant la conformité et la protection contre les menaces.",
     "continuous_support_title": "Support continu",
     "continuous_support_des": "Notre engagement envers votre succès ne s'arrête pas avec le déploiement. Nous offrons un support et une maintenance continus pour garantir que vos systèmes restent sécurisés et efficaces.",
-    "expertise_title": "Expertise",
+    "expertise_title": "Compétence",
     "expertise_des": "Notre équipe se compose d'experts de l'industrie avec des années d'expérience dans le développement logiciel, la sécurité et la conformité.",
     "customized_solutions_title": "Solutions personnalisées",
     "customized_solutions_des": "Nous adaptons nos services pour répondre aux besoins uniques de chaque client.",
@@ -77,8 +77,45 @@
 
     "call_to_action": "Appel à l'action",
     "call_to_action_des": "Pour une solution technologique rapide et abordable, il vous suffit de nous fournir les détails de votre projet, et nous vous fournirons un devis clair et économique pour une expérience technologique sans stress. Comptez sur Tech Wizard pour tous vos besoins technologiques.",
-    "contact_us_btn": "Contactez-nous"
+    "contact_us_btn": "Contactez-nous",
  
- 
+    "home": "Accueil",
+  "services": "Services",
+  "contact_us": "Contactez-nous",
+  "get_a_quote": "Obtenez un devis",
+
+  "footer": {
+    "description": "Tech Wizard - Construire et sécuriser l'avenir de la technologie.",
+    "our_links": "Nos Liens",
+    "home": "Accueil",
+    "services": "Services",
+    "contact_us": "Contactez-nous",
+    "get_in_touch": "Contactez-nous",
+    "phone": "+1 (463) 289-7828",
+    "email": "contact@teckywizard.com",
+    "address": "P.O. Case 464 Greenfield, IN 46140",
+    "copyright": "Droits d'auteur © 2024 Tous droits réservés"
+  },
+
+  "contact": {
+    "full_name": "Nom Complet",
+    "enter_full_name": "Entrez Votre Nom Complet",
+    "email": "E-mail",
+    "enter_email": "Entrez Votre E-mail",
+    "phone_number": "Numéro de Téléphone",
+    "enter_phone_number": "Entrez Votre Numéro de Téléphone",
+    "subject": "Objet",
+    "message": "Message",
+    "type_message": "Tapez Votre Message Ici",
+    "send_message": "Envoyer le Message",
+    "our_contact": "Notre Contact",
+    "phone": "+1 (463) 289-7828",
+    "mail_us": "Envoyez-nous un E-mail",
+    "email_address": "contact@teckywizard.com",
+    "our_location": "Notre Localisation",
+    "address": "P.O. Case 464 Greenfield, IN 46140"
+  }
+
+
   }
   

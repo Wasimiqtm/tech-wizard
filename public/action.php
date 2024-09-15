@@ -6,7 +6,7 @@ $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
 $subject = isset($_POST['subject']) ? $_POST['subject'] : 'Contact Us';
 $messageContent = isset($_POST['message']) ? $_POST['message'] : 'Contact Us Message';
 
-$detail["email"] = 'naeemakhtar144211@gmail.com';
+$detail["email"] = 'contact@teckywizard.com';
 $detail["title"] = "Contact Us Message";
 $detail["body"] = "You have received a new message from <strong>" . $name . "</strong>.<br>
 Phone: <strong>" . $phone . "</strong><br>
