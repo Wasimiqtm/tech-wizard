@@ -1,12 +1,12 @@
 <?php
 
-$name = isset($_POST['name']) ? $_POST['name'] : 'wasim';
-$email = isset($_POST['email']) ? $_POST['email'] : 'customer@gmail.com';
-$phone = isset($_POST['phone']) ? $_POST['phone'] : '2345';
-$subject = isset($_POST['subject']) ? $_POST['subject'] : 'test';
-$messageContent = isset($_POST['message']) ? $_POST['message'] : 'message';
+$name = isset($_POST['name']) ? $_POST['name'] : '';
+$email = isset($_POST['email']) ? $_POST['email'] : '';
+$phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+$subject = isset($_POST['subject']) ? $_POST['subject'] : 'Contact Us';
+$messageContent = isset($_POST['message']) ? $_POST['message'] : 'Contact Us Message';
 
-$detail["email"] = 'bm.wasim777@gmail.com';
+$detail["email"] = 'naeemakhtar144211@gmail.com';
 $detail["title"] = "Contact Us Message";
 $detail["body"] = "You have received a new message from <strong>" . $name . "</strong>.<br>
 Phone: <strong>" . $phone . "</strong><br>
@@ -77,6 +77,7 @@ $message = '
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'From: Tech Wizard <info@teckywizard.com>' . "\r\n";
 $headers .= 'Content-Type: text/html; charset=UTF-8' . "\r\n";
+$headers .= 'CC: bm.wasim777@gmail.com' . "\r\n";  // Add the CC email here
 
 // Send the email
 if (mail($detail["email"], $detail["title"], $message, $headers)) {

@@ -37,7 +37,7 @@
                 <div class="bg-themebgcolor rounded-xl p-3 shadow-lg wow animate__animated animate__fadeInDown">
                     <img src="Continuous Support.svg" alt="user" class="w-28 mx-auto block" />
                     <h2 class="text-2xl text-center font-bold font-bevietnam text-cardheadingclr">
-                        Continuous Support
+                        {{ $t("continuous_support") }}
                     </h2>
                     <p class="text-lg text-center font-normal font-bevietnam text-textcolor">
                         Our commitment to your success doesn’t end with deployment. We provide ongoing support and maintenance to ensure your systems remain secure and efficient.
