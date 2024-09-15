@@ -95,12 +95,13 @@ export default {
 
         const response = await axios.post("/action.php", formData, {
           headers: {
-            'Content-Type': 'multipart/form-data', // Make sure this header is set
+            'Content-Type': 'multipart/form-data', // Ensure proper content type
           },
         });
 
         if (response.data.success) {
           this.successMessage = "Your message has been sent successfully!";
+          this.resetForm(); // Reset form on successful submission
         } else {
           this.successMessage = "Failed to send message. Please try again.";
         }
@@ -108,6 +109,16 @@ export default {
         console.error("Error sending message:", error);
         this.successMessage = "An error occurred. Please try again.";
       }
+    },
+    resetForm() {
+      // Reset formData to clear the form fields
+      this.formData = {
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: ""
+      };
     }
   },
   mounted() {
