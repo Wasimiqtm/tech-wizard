@@ -1,6 +1,5 @@
 <?php
 
-print_r('here');exit;
 header("Access-Control-Allow-Origin: *"); // Allow all origins. Modify as needed.
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");

@@ -11,7 +11,8 @@ import en from "./locales/en.json";
 import fr from "./locales/fr.json";
 
 // Set up Axios
-axios.defaults.baseURL = process.env.VUE_APP_BASE_URL;
+// axios.defaults.baseURL = process.env.VUE_APP_BASE_URL;
+axios.defaults.baseURL = "https://teckywizard.com";
 axios.defaults.withCredentials = true;
 
 Vue.config.productionTip = false;
