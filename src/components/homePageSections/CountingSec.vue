@@ -11,7 +11,7 @@
               </h2>
               <h2 class="text-5xl font-bold text-center font-bevietnam text-navbgcolor">+</h2>
             </div>
-            <p class="font-bevietnam text-center mt-2 font-bold text-xl text-textcolor">Happy Clients</p>
+            <p class="font-bevietnam text-center mt-2 font-bold text-xl text-textcolor">{{ $t('happy_clients') }}</p>
           </div>
   
           <!-- Counter 2 -->
@@ -22,7 +22,7 @@
               </h2>
               <h2 class="text-5xl font-bold text-center font-bevietnam text-navbgcolor">+</h2>
             </div>
-            <p class="font-bevietnam text-center mt-2 font-bold text-xl text-textcolor">Projects Completed</p>
+            <p class="font-bevietnam text-center mt-2 font-bold text-xl text-textcolor">{{ $t('projects_completed') }}</p>
           </div>
   
           <!-- Counter 3 -->
@@ -33,7 +33,7 @@
               </h2>
               <h2 class="text-5xl font-bold text-center font-bevietnam text-navbgcolor">+</h2>
             </div>
-            <p class="font-bevietnam text-center mt-2 font-bold text-xl text-textcolor">Hours Of Support</p>
+            <p class="font-bevietnam text-center mt-2 font-bold text-xl text-textcolor">{{ $t('hours_of_support') }}</p>
           </div>
   
           <!-- Counter 4 -->
@@ -44,7 +44,7 @@
               </h2>
               <h2 class="text-5xl font-bold text-center font-bevietnam text-navbgcolor">+</h2>
             </div>
-            <p class="font-bevietnam text-center mt-2 font-bold text-xl text-textcolor">Hard Workers</p>
+            <p class="font-bevietnam text-center mt-2 font-bold text-xl text-textcolor">{{ $t('hard_workers') }}</p>
           </div>
         </div>
       </div>

@@ -8,11 +8,9 @@
     </carousel>
     
 
-    <p class=" wow animate__animated animate__fadeInLeft font-bevietnam text-center max-w-[1200px] mx-auto mt-4 px-2 pt-8 font-normal text-lg text-textcolor">
-      At Tech Wizard, we are dedicated to providing top-tier technology solutions for both government and private
-      sectors. Our expertise spans across multiple key areas, ensuring that your organization is equipped with the most
-      advanced and secure software solutions. Our business model is built on a foundation of robust development
-      practices and comprehensive security measures. Here’s how Tech Wizard can support your organization:    </p>
+    <p class=" wow animate__animated animate__fadeInLeft font-bevietnam text-center max-w-[1200px] mx-auto mt-4 px-2 pt-8 font-normal text-lg text-textcolor"> 
+      {{ $t("home_page_des") }}
+    </p>
   
   </div>
 </template>

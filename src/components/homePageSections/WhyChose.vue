@@ -2,7 +2,7 @@
     <div class="">
         <div class="max-w-[1200px] mx-auto py-16 px-2">
             <h1 class="text-headingclr text-4xl font-bold font-bevietnam text-center">
-                <span class="text-navbgcolor">Why Choose</span> Tech Wizard?
+                <span class="text-navbgcolor"> {{ $t("why_choose_title") }}</span> Tech Wizard?
             </h1>
 
             <hr class="bg-[#CFCFCF] mt-10" />
@@ -10,37 +10,37 @@
                 <div class="bg-themebgcolor rounded-xl p-3 shadow-lg wow animate__animated animate__fadeInLeft">
                     <img src="Expertise.svg" alt="user" class="w-28 mx-auto block" />
                     <h2 class="text-2xl text-center font-bold font-bevietnam text-cardheadingclr">
-                        Expertise
+                        {{ $t("expertise_title") }}
                     </h2>
                     <p class="text-lg text-center font-normal font-bevietnam text-textcolor">
-                        Our team comprises industry experts with years of experience in software development, security, and compliance.
+                        {{ $t("expertise_des") }}
                     </p>
                 </div>
                 <div class="bg-themebgcolor rounded-xl p-3 shadow-lg wow animate__animated animate__fadeInRight">
                     <img src="Customized Solutions.svg" alt="user" class="w-28 mx-auto block" />
                     <h2 class="text-2xl text-center font-bold font-bevietnam text-cardheadingclr">
-                        Customized Solutions
+                        {{ $t("customized_solutions_title") }}
                     </h2>
                     <p class="text-lg text-center font-normal font-bevietnam text-textcolor">
-                        We tailor our services to meet the unique needs of each client.
+                        {{ $t("customized_solutions_des") }}
                     </p>
                 </div>
                 <div class="bg-themebgcolor rounded-xl p-3 shadow-lg wow animate__animated animate__fadeInUp">
                     <img src="Security First.svg" alt="user" class="w-28 mx-auto block" />
                     <h2 class="text-2xl text-center font-bold font-bevietnam text-cardheadingclr">
-                        Security First
+                        {{ $t("security_first_title") }}
                     </h2>
                     <p class="text-lg text-center font-normal font-bevietnam text-textcolor">
-                        We prioritize the security of your applications and data in every project we undertake.
-                    </p>
+                        {{ $t("security_first_des") }}
+                    </p> 
                 </div>
                 <div class="bg-themebgcolor rounded-xl p-3 shadow-lg wow animate__animated animate__fadeInDown">
                     <img src="Continuous Support.svg" alt="user" class="w-28 mx-auto block" />
                     <h2 class="text-2xl text-center font-bold font-bevietnam text-cardheadingclr">
-                        {{ $t("continuous_support") }}
+                        {{ $t("continuous_support_title") }}
                     </h2>
                     <p class="text-lg text-center font-normal font-bevietnam text-textcolor">
-                        Our commitment to your success doesn’t end with deployment. We provide ongoing support and maintenance to ensure your systems remain secure and efficient.
+                        {{ $t("continuous_support_des") }}
                     </p>
                 </div>
             </div>
