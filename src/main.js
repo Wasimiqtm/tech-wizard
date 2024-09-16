@@ -31,9 +31,32 @@ const i18n = new VueI18n({
   }
 });
 
-new Vue({
-  router,
-  store,
-  i18n, // Inject i18n instance into Vue
-  render: (h) => h(App),
-}).$mount("#app");
+// Function to get user's country and set locale
+async function setLocaleBasedOnCountry() {
+  try {
+    const response = await axios.get("https://ipinfo.io/json?token=3cfda8a52d1aea");
+    const countryCode = response.data.country;
+
+    let locale = 'en'; // Default locale
+
+    if (countryCode === 'FR') {
+      locale = 'fr'; // French
+    } else if (countryCode === 'ES') {
+      locale = 'es'; // Spanish
+    }
+
+    i18n.locale = locale;
+  } catch (error) {
+    console.error("Error fetching country data:", error);
+  }
+}
+
+// Set locale based on user's country and then create Vue instance
+setLocaleBasedOnCountry().then(() => {
+  new Vue({
+    router,
+    store,
+    i18n, // Inject i18n instance into Vue
+    render: (h) => h(App),
+  }).$mount("#app");
+});

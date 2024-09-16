@@ -26,7 +26,7 @@ export default {
     return {
       carouselImages: [
         { img: "banner-5.jpg" },
-        { img: "banner-6.jpg" },
+        // { img: "banner-6.jpg" },
         { img: "banner-7.jpg" },
       ],
     
