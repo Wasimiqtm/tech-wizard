@@ -12,8 +12,8 @@ import fr from "./locales/fr.json";
 import es from "./locales/es.json"; // Import Spanish language file
 
 // Set up Axios
-axios.defaults.baseURL = "https://teckywizard.com";
-axios.defaults.withCredentials = true;
+axios.defaults.baseURL = "https://teckywizard.com"; // Base URL for API requests
+axios.defaults.withCredentials = true; // Include credentials in requests
 
 Vue.config.productionTip = false;
 
@@ -35,19 +35,19 @@ const i18n = new VueI18n({
 async function setLocaleBasedOnCountry() {
   try {
     const response = await axios.get("/ipinfo.php"); // Request to your PHP proxy
-    const countryCode = response.data.country;
+    const countryCode = response.data.country; // Get country code from response
 
     let locale = 'en'; // Default locale
 
     if (countryCode === 'FR') {
-      locale = 'fr'; // French
+      locale = 'fr'; // Set locale to French
     } else if (countryCode === 'ES') {
-      locale = 'es'; // Spanish
+      locale = 'es'; // Set locale to Spanish
     }
 
-    i18n.locale = locale;
+    i18n.locale = locale; // Update the locale in Vue I18n
   } catch (error) {
-    console.error("Error fetching country data:", error);
+    console.error("Error fetching country data:", error); // Handle errors
   }
 }
 

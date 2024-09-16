@@ -1,26 +1,22 @@
 <?php
 header('Content-Type: application/json');
 
-$token = '3cfda8a52d1aea'; // Replace with your IPinfo token
-$url = "https://ipinfo.io/json?token=$token";
+// Allow requests from your domain
+header('Access-Control-Allow-Origin: https://www.teckywizard.com'); // Replace with your actual domain
+header('Access-Control-Allow-Methods: GET');
+header('Access-Control-Allow-Headers: Content-Type');
+header('Access-Control-Allow-Credentials: true'); // Allow credentials
 
-// Initialize cURL session
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$client_ip = $_SERVER['REMOTE_ADDR']; // Get client IP
+$token = '3cfda8a52d1aea';
 
-// Execute cURL request and get response
-$response = curl_exec($ch);
+$url = "https://ipinfo.io/{$client_ip}/json?token={$token}";
 
-// Check for errors
-if (curl_errno($ch)) {
-    http_response_code(500); // Internal Server Error
+$response = file_get_contents($url);
+if ($response === FALSE) {
+    http_response_code(500);
     echo json_encode(['error' => 'Error fetching IP info']);
 } else {
-    // Return the response from IPinfo
     echo $response;
 }
-
-// Close cURL session
-curl_close($ch);
 ?>
