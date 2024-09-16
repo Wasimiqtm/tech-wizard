@@ -61,7 +61,7 @@
     "network_penetration_testing": " Tests de pénétration réseau",
     "network_penetration_testing_des": "Évaluer les défenses de votre réseau et identifier les domaines à améliorer.",
     "mobile_app_testing": " Tests d'applications mobiles",
-    "mobile_app_testing_des": "Développer et tester rigoureusement le logiciel pour garantir sa fiabilité et ses performances. Assurer la sécurité de vos applications mobiles contre les menaces.",
+    "mobile_app_testing_des": "Assurez-vous que vos applications mobiles sont sécurisées contre les menaces.",
     "reporting_and_remediation": "Rapports et remédiation",
     "reporting_and_remediation_des": "Rapports détaillés sur les résultats et recommandations concrètes pour améliorer la sécurité.",
 
@@ -73,10 +73,10 @@
     "policy_development": "Développement de politiques",
     "policy_development_des": "Assistance à la création de politiques et de procédures pour répondre aux normes réglementaires.",
     "ongoing_monitoring": "Surveillance continue",
-    "ongoing_monitoring_des": "Surveillance continue et mise à jour des pratiques de conformité pour suivre les évolutions des réglementations.",
+    "ongoing_monitoring_des": "Surveiller et mettre à jour en permanence les pratiques de conformité pour suivre l’évolution des réglementations.",
 
-    "call_to_action": "Appel à l'action",
-    "call_to_action_des": "Pour une solution technologique rapide et abordable, il vous suffit de nous fournir les détails de votre projet, et nous vous fournirons un devis clair et économique pour une expérience technologique sans stress. Comptez sur Tech Wizard pour tous vos besoins technologiques.",
+    "call_to_action": "Passez à l'étape suivante",
+    "call_to_action_des": "Pour une solution technologique rapide et abordable, partagez simplement les détails de votre projet et nous vous fournirons un devis clair et économique pour une expérience sans stress. Faites confiance à Tech Wizard pour tous vos besoins technologiques.",
     "contact_us_btn": "Contactez-nous",
  
     "home": "Accueil",
@@ -90,7 +90,7 @@
     "home": "Accueil",
     "services": "Services",
     "contact_us": "Contactez-nous",
-    "get_in_touch": "Contactez-nous",
+    "get_in_touch": "Connectez-vous avec nous",
     "phone": "+1 (463) 289-7828",
     "email": "contact@teckywizard.com",
     "address": "P.O. Case 464 Greenfield, IN 46140",
@@ -112,7 +112,7 @@
     "phone": "+1 (463) 289-7828",
     "mail_us": "Envoyez-nous un E-mail",
     "email_address": "contact@teckywizard.com",
-    "our_location": "Notre Localisation",
+    "our_location": "Adresse",
     "address": "P.O. Case 464 Greenfield, IN 46140"
   }
 

@@ -2,15 +2,16 @@
 <template>
   <div class="bg-themebgcolor pb-20">
     <!-- service section -->
-    <div class="contact-main md:py-48 py-20">
-      <h1
-        class="font-bevietnam text-center font-bold md:text-5xl text-xl text-white"
-      >
-        Contact Us
-      </h1>
+    <div class="contact-main md:py-56 py-24">
+      
      
     </div>
-    <p class="wow animate__animated animate__zoomIn text-lg text-center font-normal font-bevietnam text-textcolor max-w-[1100px] mx-auto pt-16">
+    <h1
+        class="pt-16 font-bevietnam text-center font-bold md:text-5xl text-xl text-black"
+      >
+        {{ $t("contact_us") }}
+      </h1>
+    <p class="mt-5 wow animate__animated animate__zoomIn text-lg text-center font-normal font-bevietnam text-textcolor max-w-[1100px] mx-auto ">
       {{ $t("contact_text") }}
     </p>
   </div>
@@ -37,7 +38,7 @@ export default {
 <style scoped>
 /* Add any additional styling here */
 .contact-main {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url("/public/Rectangle 4821 (1).png");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url("/public/banner-9.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

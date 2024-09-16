@@ -2,7 +2,7 @@
     <div class="bg-themebgcolor py-16">
       <!-- Display the number here -->
       <div class="max-w-[1200px] mx-auto px-2">
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10">
           <!-- Counter 1 -->
           <div class="bg-white wow animate__animated animate__zoomIn rounded-xl p-5 shadow-lg">
             <div class="flex justify-center">
@@ -37,7 +37,7 @@
           </div>
   
           <!-- Counter 4 -->
-          <div class="bg-white wow animate__animated animate__zoomIn rounded-xl p-5 shadow-lg">
+          <!-- <div class="bg-white wow animate__animated animate__zoomIn rounded-xl p-5 shadow-lg">
             <div class="flex justify-center">
               <h2 ref="counter4" class="text-5xl font-bold text-center font-bevietnam text-navbgcolor">
                 {{ startVal4 }}
@@ -45,7 +45,7 @@
               <h2 class="text-5xl font-bold text-center font-bevietnam text-navbgcolor">+</h2>
             </div>
             <p class="font-bevietnam text-center mt-2 font-bold text-xl text-textcolor">{{ $t('hard_workers') }}</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

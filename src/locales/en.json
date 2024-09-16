@@ -60,7 +60,7 @@
     "network_penetration_testing": " Network Penetration Testing",
     "network_penetration_testing_des": "Assessing your network's defenses and identifying areas of improvement.",
     "mobile_app_testing": " Mobile App Testing",
-    "mobile_app_testing_des": "Building and rigorously testing the software to ensure reliability and performance.Ensuring your mobile applications are secure against threats.",
+    "mobile_app_testing_des": "Ensuring your mobile applications are secure against threats.",
     "reporting_and_remediation": "Reporting and Remediation",
     "reporting_and_remediation_des": "Detailed reports on findings and actionable recommendations to enhance security.",
 
@@ -73,8 +73,8 @@
     "ongoing_monitoring": "Ongoing Monitoring",
     "ongoing_monitoring_des": "Continuously monitoring and updating compliance practices to keep up with changing regulations.",
     
-    "call_to_action": "Call to Action",
-    "call_to_action_des": "For a fast and affordable tech solution, just give us your project details, and we'll provide you with a clear and budget-friendly quote for a stress-free tech experience. Count on Tech Wizard for all your tech needs.",
+    "call_to_action": "Take the Next Step",
+    "call_to_action_des": "For a fast and affordable tech solution, simply share your project details, and we'll provide a clear, budget-friendly quote for a stress-free experience. Trust Tech Wizard for all your tech needs.",
     "contact_us_btn": "Contact Us",
     
 
@@ -90,7 +90,7 @@
     "home": "Home",
     "services": "Services",
     "contact_us": "Contact Us",
-    "get_in_touch": "Get In Touch",
+    "get_in_touch": "Connect With Us",
     "phone": "+1 (463) 289-7828",
     "email": "contact@teckywizard.com",
     "address": "P.O. Box 464 Greenfield, IN 46140",
@@ -112,7 +112,7 @@
     "phone": "+1 (463) 289-7828",
     "mail_us": "Mail Us",
     "email_address": "contact@teckywizard.com",
-    "our_location": "Our Location",
+    "our_location": "Address",
     "address": "P.O. Box 464 Greenfield, IN 46140"
   }
 

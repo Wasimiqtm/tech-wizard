@@ -93,7 +93,7 @@
                             </div>
                             <div class="flex my-4 items-start">
                                 <img src="Group-1000002024.png" alt="user" class="h-7 mr-3 mt-1" />
-                                <p class="text-lg font-bevietnam"><b>{{ $t("network_penetration_testing") }}: </b> {{ $t("network_penetration_testing") }} </p>
+                                <p class="text-lg font-bevietnam"><b>{{ $t("network_penetration_testing") }}: </b> {{ $t("network_penetration_testing_des") }} </p>
                             </div>
                             <div class="flex my-4 items-start">
                                 <img src="Group-1000002024.png" alt="user" class="h-7 mr-3 mt-1" />
@@ -133,12 +133,12 @@
                             </div>
                             <div class="flex my-4 items-start">
                                 <img src="Group-1000002024.png" alt="user" class="h-7 mr-3 mt-1" />
-                                <p class="text-lg font-bevietnam"><b> {{ $t("ongoing_monitoring") }}: </b>{{ $t("ongoing_monitoring") }}</p>
+                                <p class="text-lg font-bevietnam"><b> {{ $t("ongoing_monitoring") }}: </b>{{ $t("ongoing_monitoring_des") }}</p>
                             </div>
                         </div>
                     </div>
                     <div class="lg:pl-2 lg:order-2 order-1">
-                        <img src="big-4.png" alt="user" class="w-full" />
+                        <img src="new-s.jpg" alt="user" class="w-full" />
                     </div>
                 </div>
             </div>
@@ -153,23 +153,7 @@ export default {
     name: "ServiceCards",
     data() {
         return {
-            // servises: [
-
-            //   {
-            //     title: "Embroidery Digitizing",
-            //     img: "Rectangle 4808.png",
-            //     priceTitle: "Price",
-            //     price: "$15",
-            //   },
-            //   {
-            //     title: "Embroidery Digitizing",
-            //     img: "Rectangle 4810.png",
-            //     priceTitle: "Price",
-            //     price: "$15",
-            //   },
-
-
-            // ],
+        // 
         };
     },
     mounted() {

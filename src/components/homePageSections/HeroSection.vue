@@ -25,8 +25,9 @@ export default {
   data() {
     return {
       carouselImages: [
-        { img: "banner-1.jfif" },
-        { img: "banner-2.jfif" },
+        { img: "banner-5.jpg" },
+        { img: "banner-6.jpg" },
+        { img: "banner-7.jpg" },
       ],
     
     };
