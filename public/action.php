@@ -42,7 +42,7 @@ $message = '
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'From: Tech Wizard <info@teckywizard.com>' . "\r\n";
 $headers .= 'Content-Type: text/html; charset=UTF-8' . "\r\n";
-$headers .= 'CC: bm.wasim777@gmail.com' . "\r\n"; // Optional CC
+// $headers .= 'CC: bm.wasim777@gmail.com' . "\r\n"; // Optional CC
 
 // Send the email
 if (mail($detail["email"], $detail["title"], $message, $headers)) {

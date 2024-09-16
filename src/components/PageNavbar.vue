@@ -6,6 +6,7 @@
           <img src="TECH.png" alt="user" class="md:w-36 w-20" />
         </a>
 
+        <!-- Mobile menu icon -->
         <div class="md:hidden">
           <button type="button"
             class="inline-flex font-bevietnam items-center p-2 w-10 h-10 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2"
@@ -18,6 +19,7 @@
           </button>
         </div>
 
+        <!-- Desktop navigation -->
         <div class="hidden md:block">
           <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
             <li v-for="value in translatedPagesLinks" :key="value.title">
@@ -29,17 +31,16 @@
           </ul>
         </div>
 
-        <!-- Container for Quote Button and Language Dropdown -->
+        <!-- Desktop buttons (Get a Quote and Language Dropdown) -->
         <div class="hidden md:flex space-x-4 items-center">
           <router-link to="/contact">
             <button type="button"
               class="px-3 py-2 text-md font-medium text-center text-white bg-navbgcolor rounded-lg hover:bg-black">
-             {{ $t('get_a_quote') }}
+              {{ $t('get_a_quote') }}
             </button>
           </router-link>
 
           <div class="relative inline-block text-left">
-            <!-- Dropdown Button -->
             <button @click="toggleDropdown" type="button"
               class="px-3 py-2 text-md font-medium text-center text-white bg-navbgcolor rounded-lg hover:bg-black">
               {{ currentLanguageLabel }}
@@ -65,8 +66,9 @@
       </div>
     </nav>
 
-    <!-- mobile navbar -->
-    <div class="w-full h-full fixed z-20 top-[65px] bg-navbgcolor md:hidden sm:block" v-if="isToggled">
+    <!-- Mobile navbar -->
+    <div class="w-64 h-full fixed z-20 top-[65px] bg-navbgcolor transform transition-transform duration-300"
+         :class="isToggled ? 'translate-x-0' : '-translate-x-full'">
       <div class="px-4">
         <ul class="py-4 font-medium rounded-lg">
           <li v-for="value in pagesLinks" :key="value.title" @click="toggle">
@@ -74,6 +76,40 @@
               class="pt-2 mb-2 mx-2 font-bevietnam font-normal text-white inline-block text-lg">
               {{ value.title }}
             </router-link>
+          </li>
+
+          <!-- Get a Quote button -->
+          <li class="mt-4">
+            <router-link to="/contact">
+              <button @click="toggle" type="button"
+                class="w-full px-3 py-2 text-md font-medium text-left text-white bg-white bg-opacity-20 rounded-lg hover:bg-opacity-30">
+                {{ $t('get_a_quote') }}
+              </button>
+            </router-link>
+          </li>
+
+          <!-- Language Dropdown button -->
+          <li class="mt-2">
+            <button @click="toggleDropdown" type="button"
+              class="w-full px-3 py-2 text-md font-medium text-left text-white bg-white bg-opacity-20 rounded-lg hover:bg-opacity-30">
+              {{ currentLanguageLabel }}
+            </button>
+
+            <!-- Language dropdown list -->
+            <div v-if="isDropdownOpen" class="mt-2 w-full bg-white rounded-lg shadow-lg">
+              <button @click="changeLanguage('en'); toggle"
+                class="block px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100 w-full">
+                English
+              </button>
+              <button @click="changeLanguage('fr'); toggle"
+                class="block px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100 w-full">
+                Français
+              </button>
+              <button @click="changeLanguage('es'); toggle"
+                class="block px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100 w-full">
+                Español
+              </button>
+            </div>
           </li>
         </ul>
       </div>
@@ -84,16 +120,14 @@
 <script>
 export default {
   name: "PageNavbar",
-
   data() {
     return {
-      dialogBox: false,
       isToggled: false,
       isDropdownOpen: false,
       languages: {
         en: 'English',
         fr: 'French',
-        es: 'Español', // Added Spanish
+        es: 'Español',
       },
       currentLanguage: 'en', // Default language
       pagesLinks: [
@@ -119,19 +153,14 @@ export default {
     toggle() {
       this.isToggled = !this.isToggled;
     },
-    toggle2() {
-      this.dialogBox = !this.dialogBox;
-    },
-    closeModal() {
-      this.dialogBox = false;
-    },
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;
     },
     changeLanguage(locale) {
-      this.currentLanguage = locale; // Update the selected language
-      this.$i18n.locale = locale;    // Change the locale in Vue I18n
-      this.isDropdownOpen = false;   // Close the dropdown
+      this.currentLanguage = locale;
+      this.$i18n.locale = locale;
+      this.isDropdownOpen = false; // Close the dropdown
+      this.isToggled = false; // Close the sidebar
     }
   },
 };
