@@ -9,9 +9,9 @@ import VueI18n from "vue-i18n";
 // Import language files
 import en from "./locales/en.json";
 import fr from "./locales/fr.json";
+import es from "./locales/es.json"; // Import Spanish language file
 
 // Set up Axios
-// axios.defaults.baseURL = process.env.VUE_APP_BASE_URL;
 axios.defaults.baseURL = "https://teckywizard.com";
 axios.defaults.withCredentials = true;
 
@@ -22,11 +22,12 @@ Vue.use(VueI18n);
 
 // Create Vue I18n instance with options
 const i18n = new VueI18n({
-  locale: 'en', // Set locale
+  locale: 'en', // Set default locale
   fallbackLocale: 'en', // Fallback locale
   messages: {
-    en,
-    fr
+    en, // English
+    fr, // French
+    es  // Spanish
   }
 });
 

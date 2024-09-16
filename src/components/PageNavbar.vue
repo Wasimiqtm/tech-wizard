@@ -55,6 +55,10 @@
                 class="block px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100 w-full">
                 Français
               </button>
+              <button @click="changeLanguage('es')"
+                class="block px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100 w-full">
+                Español
+              </button>
             </div>
           </div>
         </div>
@@ -89,6 +93,7 @@ export default {
       languages: {
         en: 'English',
         fr: 'French',
+        es: 'Español', // Added Spanish
       },
       currentLanguage: 'en', // Default language
       pagesLinks: [
@@ -125,8 +130,8 @@ export default {
     },
     changeLanguage(locale) {
       this.currentLanguage = locale; // Update the selected language
-      this.$i18n.locale = locale; // Change the locale
-      this.isDropdownOpen = false; // Close the dropdown
+      this.$i18n.locale = locale;    // Change the locale in Vue I18n
+      this.isDropdownOpen = false;   // Close the dropdown
     }
   },
 };
