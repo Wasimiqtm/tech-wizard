@@ -34,7 +34,7 @@ const i18n = new VueI18n({
 // Function to get user's country and set locale
 async function setLocaleBasedOnCountry() {
   try {
-    const response = await axios.get("https://ipinfo.io/json?token=3cfda8a52d1aea");
+    const response = await axios.get("/ipinfo.php"); // Request to your PHP proxy
     const countryCode = response.data.country;
 
     let locale = 'en'; // Default locale
