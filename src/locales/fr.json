@@ -26,7 +26,7 @@
 
     "service_one_title1": "Conception et ",
     "service_one_title2": "développement de logiciels",
-    "service_one_des": "Chez Tech Wizard, nous croyons que des logiciels efficaces sont la pierre angulaire de toute organisation réussie. Notre équipe de développeurs et de concepteurs expérimentés travaille en étroite collaboration avec les clients pour créer des solutions logicielles personnalisées, adaptées à leurs besoins uniques. Que vous nécessitiez une nouvelle application développée de zéro ou des améliorations pour vos logiciels existants, nous veillons à offrir une expérience utilisateur fluide, intuitive et efficace. Notre processus de développement comprend :",
+    "service_one_des": "Chez Tech Wizard, nous croyons que des logiciels efficacessont à la basede toute organisation réussie :",
     "service_two_title1": "Sécurité des ",
     "service_two_title2": " applications",
     "service_two_des": "Dans le paysage numérique actuel, la sécurité est primordiale. Tech Wizard propose des services complets de sécurité des applications pour protéger vos logiciels contre les menaces. Nos services comprennent :",
@@ -61,7 +61,7 @@
     "network_penetration_testing": " Tests de pénétration réseau",
     "network_penetration_testing_des": "Évaluer les défenses de votre réseau et identifier les domaines à améliorer.",
     "mobile_app_testing": " Tests d'applications mobiles",
-    "mobile_app_testing_des": "Assurez-vous que vos applications mobiles sont sécurisées contre les menaces.",
+    "mobile_app_testing_des": "Veiller à ce que vos applications mobiles soient protégées contre les menaces.",
     "reporting_and_remediation": "Rapports et remédiation",
     "reporting_and_remediation_des": "Rapports détaillés sur les résultats et recommandations concrètes pour améliorer la sécurité.",
 
@@ -90,10 +90,10 @@
     "home": "Accueil",
     "services": "Services",
     "contact_us": "Contactez-nous",
-    "get_in_touch": "Connectez-vous avec nous",
+    "get_in_touch": "Communiquer avec nous",
     "phone": "+1 (463) 289-7828",
     "email": "contact@teckywizard.com",
-    "address": "P.O. Case 464 Greenfield, IN 46140",
+    "address": "P.O. Box 464 Greenfield, IN 46140",
     "copyright": "Droits d'auteur © 2024 Tous droits réservés"
   },
 
@@ -113,7 +113,7 @@
     "mail_us": "Envoyez-nous un E-mail",
     "email_address": "contact@teckywizard.com",
     "our_location": "Adresse",
-    "address": "P.O. Case 464 Greenfield, IN 46140"
+    "address": "P.O. Box 464 Greenfield, IN 46140"
   }
 
 
