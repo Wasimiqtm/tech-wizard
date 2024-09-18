@@ -2,8 +2,12 @@
   <div>
     <!-- hero section image -->
     <carousel :autoplay="true" :dots="true" :center="true" :slideBy="1" :items="1" :nav="false" :loop="true">
-      <div class="main-img" v-for="(item, index) in carouselImages" :key="index">
+      <div class="main-img relative" v-for="(item, index) in carouselImages" :key="index">
         <img :src="item.img" alt="user" class="w-full md:h-[90vh] xs:h-[200px]" />
+        <div class="absolute top-[27%] md:top-[40%] left-1/2 transform -translate-x-1/2">
+          <p class="text-center text-white text-xl md:text-3xl italic font-light">welcome to</p>
+          <h1 class="text-center text-white font-bevietnam font-bold text-3xl md:text-6xl md:mt-2">Tech Wizard</h1>
+        </div>
       </div>
     </carousel>
     
@@ -25,9 +29,8 @@ export default {
   data() {
     return {
       carouselImages: [
-        { img: "banner-5.jpg" },
-        // { img: "banner-6.jpg" },
-        { img: "banner-7.jpg" },
+        { img: "banner-final-1.jpg" },
+        { img: "banner-final-2.jpg" },
       ],
     
     };
