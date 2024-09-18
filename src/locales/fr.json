@@ -1,6 +1,7 @@
 {
     "hello": "Bonjour",
     "welcome": "Bienvenue sur Vue.js",
+    "welcome_to": "bienvenue chez",
     "contact_text": "Prêt à élever vos solutions technologiques ? Contactez Tech Wizard dès aujourd'hui pour en savoir plus sur la manière dont nous pouvons aider votre organisation à créer et sécuriser ses logiciels, en garantissant la conformité et la protection contre les menaces.",
     "continuous_support_title": "Support continu",
     "continuous_support_des": "Notre engagement envers votre succès ne s'arrête pas avec le déploiement. Nous offrons un support et une maintenance continus pour garantir que vos systèmes restent sécurisés et efficaces.",
