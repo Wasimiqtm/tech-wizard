@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- hero section image -->
-    <img src="Rectangle 4817 (1).png" alt="user" class="w-full md:h-[430px] h-[200px]" />
+    <img src="Rectangle 4817 (1).png" alt="user" class="w-full md:h-[500px] h-[170px]" />
     <!-- service section -->
     <h1 class=" wow animate__animated animate__fadeInDown text-headingclr lg:text-5xl text-4xl font-bold font-bevietnam text-center mt-20">
       {{ $t("our_services_title") }}

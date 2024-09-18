@@ -2,10 +2,9 @@
 <template>
   <div class="bg-themebgcolor pb-20">
     <!-- service section -->
-    <div class="contact-main md:py-56 py-24">
-      
-     
-    </div>
+    <img src="contact-banner.jfif" alt="user" class="w-full  md:mt-4 md:h-[500px]" />
+    <!-- <div class="contact-main md:py-56 py-24">
+    </div> -->
     <h1
         class="pt-16 font-bevietnam text-center font-bold md:text-5xl text-xl text-black"
       >
@@ -38,7 +37,7 @@ export default {
 <style scoped>
 /* Add any additional styling here */
 .contact-main {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url("/public/banner-9.jpg");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url("/public/contact-banner.jfif");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
